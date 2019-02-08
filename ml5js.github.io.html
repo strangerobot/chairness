@@ -1,0 +1,34 @@
+
+<!-- saved from url=(0042)https://ml5js.github.io/ml5-homepage-demo/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="stylesheet" type="text/css" href="./ml5js.github.io_files/style.css">
+  <script src="https://unpkg.com/ml5@0.1.3/dist/ml5.min.js"></script>
+</head>
+
+<body onresize="windowResized()">
+  <div id="container">
+    <!-- Image attribution: https://www.flickr.com/photos/tambako/15271600798 -->
+    <img src="./ml5js.github.io_files/bird.jpg" id="image" class="center">
+    <div id="text-container">
+      <p id="instruction" class="green-color">
+      <button id="uploader-btn" onclick="clickUploader()">Upload Image</button>
+      </p><p class="green-color "> or drag and drop 📂</p>
+      <p></p>
+      <p id="warning" class="result-color"></p>
+      <p class="result-color">
+        The MobileNet model labeled this ⤴ as a
+        <span id="result" class="green-color">macaw</span>
+        <span id="probability-container" class="result-color">
+          with a confidence of
+          <span id="probability" class="green-color">99.75%</span>.
+        </span>
+      </p>
+      <input name="imgFile" type="file" id="fileUploader" accept="image/*" onchange="handleFiles()">
+    </div>
+  </div>
+  <script src="./ml5js.github.io_files/sketch.js"></script>
+
+
+
+</body></html>
